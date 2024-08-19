@@ -3,6 +3,7 @@
 ## 개요
 
 노인분들이 키오스크를 잘 사용하지 못하는 것을 보고 사용을 도와드리는 서비스가 있다면 좋겠다는 생각이 들어 기획하게 되었습니다.
+
 프랜차이즈 매장에서 기존에 있던 상담원 직원을 활용하여 노년층 고객들에게 화상 통화를 통해 도움을 드리는 서비스입니다.
 
 ## 문서
@@ -22,13 +23,12 @@ Notion : [링크](https://fluffy-smell-11f.notion.site/SSAFY-PJT-5cf6c9977a6c460
 | 정연서 | BE    | 백앤드 개발, Openvidu     |
 | 최장우 | Infra | CI/CD, Openvidu           |
 
-## 기술 스택 및 아키텍처
+## 기술 스택
 
 ### 백엔드(Spring Boot, Gradle)
 
 - Spring Boot: 3.2.7
 - Spring Dependency Management: 1.1.5
-
 - Google Protobuf Plugin: 0.8.19
 - Java Language Version: 21
 - OpenVidu Java Client: 2.20.0
@@ -58,6 +58,8 @@ Notion : [링크](https://fluffy-smell-11f.notion.site/SSAFY-PJT-5cf6c9977a6c460
 - redux: 5.0.1
 - redux-persist: 6.0.0
 
-# ER
-![Pinkio ERD다이어그램](https://github.com/user-attachments/assets/ac73acdc-8e1d-40ef-91b6-cc74ee9a9e83)
+## 아키텍처
 
+## ERD
+
+![Pinkio ERD다이어그램](https://github.com/user-attachments/assets/ac73acdc-8e1d-40ef-91b6-cc74ee9a9e83)
