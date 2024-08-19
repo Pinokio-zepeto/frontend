@@ -1,0 +1,179 @@
+{
+  "에스프레소": [
+    { "name_kr": "에스프레소", "name_en": "Espresso", "price": 4000 },
+    { "name_kr": "에스프레소 마키아토", "name_en": "Espresso Macchiato", "price": 4500 },
+    { "name_kr": "에스프레소 콘 파나", "name_en": "Espresso Con Panna", "price": 4500 },
+    { "name_kr": "아메리카노", "name_en": "Americano", "price": 4500 },
+    { "name_kr": "라떼", "name_en": "Latte", "price": 5000 },
+    { "name_kr": "카푸치노", "name_en": "Cappuccino", "price": 5000 },
+    { "name_kr": "카라멜 마키아토", "name_en": "Caramel Macchiato", "price": 5500 },
+    { "name_kr": "모카", "name_en": "Mocha", "price": 5500 },
+    { "name_kr": "화이트 초콜릿 모카", "name_en": "White Chocolate Mocha", "price": 6000 },
+    { "name_kr": "플랫 화이트", "name_en": "Flat White", "price": 5800 }
+  ],
+  "콜드 브루": [
+    { "name_kr": "콜드 브루", "name_en": "Cold Brew", "price": 4500 },
+    { "name_kr": "콜드 브루 라떼", "name_en": "Cold Brew Latte", "price": 5000 },
+    { "name_kr": "콜드 브루 몰트", "name_en": "Cold Brew Malt", "price": 5500 },
+    { "name_kr": "콜드 브루 니트로", "name_en": "Nitro Cold Brew", "price": 5500 },
+    { "name_kr": "바닐라 콜드 브루", "name_en": "Vanilla Cold Brew", "price": 5000 },
+    { "name_kr": "카라멜 콜드 브루", "name_en": "Caramel Cold Brew", "price": 5000 },
+    { "name_kr": "초콜릿 콜드 브루", "name_en": "Chocolate Cold Brew", "price": 5500 },
+    { "name_kr": "콜드 브루 톨", "name_en": "Cold Brew Tall", "price": 4800 },
+    { "name_kr": "콜드 브루 그란데", "name_en": "Cold Brew Grande", "price": 5500 },
+    { "name_kr": "콜드 브루 벤티", "name_en": "Cold Brew Venti", "price": 6000 }
+  ],
+  "블론드": [
+    { "name_kr": "블론드 에스프레소", "name_en": "Blonde Espresso", "price": 4000 },
+    { "name_kr": "블론드 아메리카노", "name_en": "Blonde Americano", "price": 4500 },
+    { "name_kr": "블론드 라떼", "name_en": "Blonde Latte", "price": 5000 },
+    { "name_kr": "블론드 카푸치노", "name_en": "Blonde Cappuccino", "price": 5000 },
+    { "name_kr": "블론드 카라멜 마키아토", "name_en": "Blonde Caramel Macchiato", "price": 5500 },
+    { "name_kr": "블론드 모카", "name_en": "Blonde Mocha", "price": 5500 },
+    {
+      "name_kr": "블론드 화이트 초콜릿 모카",
+      "name_en": "Blonde White Chocolate Mocha",
+      "price": 6000
+    },
+    { "name_kr": "블론드 플랫 화이트", "name_en": "Blonde Flat White", "price": 5500 },
+    { "name_kr": "블론드 아이스 커피", "name_en": "Blonde Iced Coffee", "price": 5000 },
+    { "name_kr": "블론드 콜드 브루", "name_en": "Blonde Cold Brew", "price": 5500 }
+  ],
+  "디카페인 커피": [
+    { "name_kr": "디카페인 에스프레소", "name_en": "Decaf Espresso", "price": 4000 },
+    { "name_kr": "디카페인 아메리카노", "name_en": "Decaf Americano", "price": 4500 },
+    { "name_kr": "디카페인 라떼", "name_en": "Decaf Latte", "price": 5000 },
+    { "name_kr": "디카페인 카푸치노", "name_en": "Decaf Cappuccino", "price": 5000 },
+    { "name_kr": "디카페인 카라멜 마키아토", "name_en": "Decaf Caramel Macchiato", "price": 5500 },
+    { "name_kr": "디카페인 모카", "name_en": "Decaf Mocha", "price": 5500 },
+    {
+      "name_kr": "디카페인 화이트 초콜릿 모카",
+      "name_en": "Decaf White Chocolate Mocha",
+      "price": 6000
+    },
+    { "name_kr": "디카페인 플랫 화이트", "name_en": "Decaf Flat White", "price": 5500 },
+    { "name_kr": "디카페인 아이스 커피", "name_en": "Decaf Iced Coffee", "price": 5000 },
+    { "name_kr": "디카페인 콜드 브루", "name_en": "Decaf Cold Brew", "price": 5500 }
+  ],
+  "리저브 에스프레소": [
+    { "name_kr": "리저브 에스프레소", "name_en": "Reserve Espresso", "price": 6000 },
+    { "name_kr": "리저브 아메리카노", "name_en": "Reserve Americano", "price": 6500 },
+    { "name_kr": "리저브 라떼", "name_en": "Reserve Latte", "price": 7000 },
+    { "name_kr": "리저브 카푸치노", "name_en": "Reserve Cappuccino", "price": 7000 },
+    { "name_kr": "리저브 카라멜 마키아토", "name_en": "Reserve Caramel Macchiato", "price": 7500 },
+    { "name_kr": "리저브 모카", "name_en": "Reserve Mocha", "price": 7500 },
+    {
+      "name_kr": "리저브 화이트 초콜릿 모카",
+      "name_en": "Reserve White Chocolate Mocha",
+      "price": 8000
+    },
+    { "name_kr": "리저브 플랫 화이트", "name_en": "Reserve Flat White", "price": 7500 },
+    { "name_kr": "리저브 아이스 커피", "name_en": "Reserve Iced Coffee", "price": 7000 },
+    { "name_kr": "리저브 콜드 브루", "name_en": "Reserve Cold Brew", "price": 7500 }
+  ],
+  "리저브 드립": [
+    { "name_kr": "리저브 드립 커피", "name_en": "Reserve Drip Coffee", "price": 6000 },
+    { "name_kr": "리저브 아이스 드립 커피", "name_en": "Reserve Iced Drip Coffee", "price": 6500 },
+    { "name_kr": "리저브 브루 커피", "name_en": "Reserve Brew Coffee", "price": 7000 },
+    { "name_kr": "리저브 아이스 브루 커피", "name_en": "Reserve Iced Brew Coffee", "price": 7500 },
+    { "name_kr": "리저브 클로버", "name_en": "Reserve Clover", "price": 8000 },
+    {
+      "name_kr": "리저브 클로버 아이스 커피",
+      "name_en": "Reserve Clover Iced Coffee",
+      "price": 8500
+    },
+    { "name_kr": "리저브 푸어오버", "name_en": "Reserve Pour Over", "price": 8000 },
+    { "name_kr": "리저브 아이스 푸어오버", "name_en": "Reserve Iced Pour Over", "price": 8500 },
+    { "name_kr": "리저브 스팀드 밀크", "name_en": "Reserve Steamed Milk", "price": 7000 },
+    { "name_kr": "리저브 차이 라떼", "name_en": "Reserve Chai Latte", "price": 7500 },
+    { "name_kr": "리저브 밀크 티", "name_en": "Reserve Milk Tea", "price": 8000 }
+  ],
+  "티바나": [
+    { "name_kr": "티바나 민트 블렌드", "name_en": "Teavana Mint Blend", "price": 5000 },
+    { "name_kr": "티바나 그린 티", "name_en": "Teavana Green Tea", "price": 5000 },
+    { "name_kr": "티바나 블랙 티", "name_en": "Teavana Black Tea", "price": 5000 },
+    { "name_kr": "티바나 패션탱고 티", "name_en": "Teavana Passion Tango Tea", "price": 5500 },
+    { "name_kr": "티바나 얼그레이 티", "name_en": "Teavana Earl Grey Tea", "price": 5500 },
+    { "name_kr": "티바나 카모마일 블렌드", "name_en": "Teavana Chamomile Blend", "price": 5500 },
+    { "name_kr": "티바나 허니부시 티", "name_en": "Teavana Honeybush Tea", "price": 5500 },
+    { "name_kr": "티바나 아이스 그린 티", "name_en": "Teavana Iced Green Tea", "price": 6000 },
+    { "name_kr": "티바나 아이스 블랙 티", "name_en": "Teavana Iced Black Tea", "price": 6000 },
+    {
+      "name_kr": "티바나 아이스 패션탱고 티",
+      "name_en": "Teavana Iced Passion Tango Tea",
+      "price": 6500
+    }
+  ],
+  "피지오": [
+    { "name_kr": "피지오", "name_en": "Fizzio", "price": 5500 },
+    { "name_kr": "피지오 레몬 에이드", "name_en": "Fizzio Lemonade", "price": 6000 },
+    { "name_kr": "피지오 라임 에이드", "name_en": "Fizzio Limeade", "price": 6000 },
+    { "name_kr": "피지오 오렌지 에이드", "name_en": "Fizzio Orangeade", "price": 6000 },
+    { "name_kr": "피지오 체리 에이드", "name_en": "Fizzio Cherryade", "price": 6000 },
+    { "name_kr": "피지오 크랜베리 에이드", "name_en": "Fizzio Cranberryade", "price": 6000 },
+    { "name_kr": "피지오 블루베리 에이드", "name_en": "Fizzio Blueberryade", "price": 6000 },
+    { "name_kr": "피지오 라즈베리 에이드", "name_en": "Fizzio Raspberryade", "price": 6000 },
+    { "name_kr": "피지오 피치 에이드", "name_en": "Fizzio Peachade", "price": 6000 },
+    { "name_kr": "피지오 매실 에이드", "name_en": "Fizzio Plumade", "price": 6000 }
+  ],
+  "리프레셔": [
+    { "name_kr": "아사이 리프레셔", "name_en": "Acai Refresher", "price": 6000 },
+    { "name_kr": "피치 리프레셔", "name_en": "Peach Refresher", "price": 6000 },
+    { "name_kr": "레몬 리프레셔", "name_en": "Lemon Refresher", "price": 6000 },
+    { "name_kr": "블루베리 리프레셔", "name_en": "Blueberry Refresher", "price": 6000 },
+    { "name_kr": "라임 리프레셔", "name_en": "Lime Refresher", "price": 6000 },
+    { "name_kr": "오렌지 리프레셔", "name_en": "Orange Refresher", "price": 6000 },
+    { "name_kr": "크랜베리 리프레셔", "name_en": "Cranberry Refresher", "price": 6000 },
+    { "name_kr": "체리 리프레셔", "name_en": "Cherry Refresher", "price": 6000 },
+    { "name_kr": "망고 리프레셔", "name_en": "Mango Refresher", "price": 6000 },
+    { "name_kr": "파인애플 리프레셔", "name_en": "Pineapple Refresher", "price": 6000 }
+  ],
+  "블렌디드": [
+    { "name_kr": "카라멜 블렌디드", "name_en": "Caramel Blended", "price": 6500 },
+    { "name_kr": "초콜릿 블렌디드", "name_en": "Chocolate Blended", "price": 6500 },
+    { "name_kr": "모카 블렌디드", "name_en": "Mocha Blended", "price": 6500 },
+    { "name_kr": "딸기 블렌디드", "name_en": "Strawberry Blended", "price": 6500 },
+    { "name_kr": "망고 블렌디드", "name_en": "Mango Blended", "price": 6500 },
+    { "name_kr": "녹차 블렌디드", "name_en": "Green Tea Blended", "price": 6500 },
+    { "name_kr": "바닐라 블렌디드", "name_en": "Vanilla Blended", "price": 6500 },
+    { "name_kr": "쿠키 앤 크림 블렌디드", "name_en": "Cookies & Cream Blended", "price": 7000 },
+    { "name_kr": "피스타치오 블렌디드", "name_en": "Pistachio Blended", "price": 7000 },
+    { "name_kr": "화이트 초콜릿 블렌디드", "name_en": "White Chocolate Blended", "price": 7000 }
+  ],
+  "브루드 커피": [
+    { "name_kr": "브루드 커피", "name_en": "Brewed Coffee", "price": 4000 },
+    { "name_kr": "브루드 아이스 커피", "name_en": "Brewed Iced Coffee", "price": 4500 },
+    { "name_kr": "브루드 프렌치 프레스", "name_en": "Brewed French Press", "price": 5000 },
+    { "name_kr": "브루드 푸어오버", "name_en": "Brewed Pour Over", "price": 5000 },
+    { "name_kr": "브루드 클로버", "name_en": "Brewed Clover", "price": 6000 },
+    { "name_kr": "브루드 니트로", "name_en": "Brewed Nitro", "price": 6000 },
+    { "name_kr": "브루드 콜드 브루", "name_en": "Brewed Cold Brew", "price": 5000 },
+    { "name_kr": "브루드 블랙 커피", "name_en": "Brewed Black Coffee", "price": 4500 },
+    { "name_kr": "브루드 라떼", "name_en": "Brewed Latte", "price": 5500 },
+    { "name_kr": "브루드 카푸치노", "name_en": "Brewed Cappuccino", "price": 5500 }
+  ],
+  "기타": [
+    { "name_kr": "핫 초콜릿", "name_en": "Hot Chocolate", "price": 5000 },
+    { "name_kr": "차이 티 라떼", "name_en": "Chai Tea Latte", "price": 5500 },
+    { "name_kr": "밀크 티", "name_en": "Milk Tea", "price": 5500 },
+    { "name_kr": "매치 티 라떼", "name_en": "Matcha Tea Latte", "price": 6000 },
+    { "name_kr": "타로 라떼", "name_en": "Taro Latte", "price": 6000 },
+    { "name_kr": "로즈 밀크 티", "name_en": "Rose Milk Tea", "price": 6000 },
+    { "name_kr": "바닐라 밀크 티", "name_en": "Vanilla Milk Tea", "price": 6000 },
+    { "name_kr": "얼그레이 밀크 티", "name_en": "Earl Grey Milk Tea", "price": 6000 },
+    { "name_kr": "아포가토", "name_en": "Affogato", "price": 6500 },
+    { "name_kr": "아이리시 커피", "name_en": "Irish Coffee", "price": 6500 }
+  ],
+  "병음료": [
+    { "name_kr": "병아메리카노", "name_en": "Bottled Americano", "price": 4500 },
+    { "name_kr": "병라떼", "name_en": "Bottled Latte", "price": 5000 },
+    { "name_kr": "병콜드브루", "name_en": "Bottled Cold Brew", "price": 5500 },
+    { "name_kr": "병녹차", "name_en": "Bottled Green Tea", "price": 4500 },
+    { "name_kr": "병블랙티", "name_en": "Bottled Black Tea", "price": 4500 },
+    { "name_kr": "병허니레몬", "name_en": "Bottled Honey Lemon", "price": 5000 },
+    { "name_kr": "병망고", "name_en": "Bottled Mango", "price": 5000 },
+    { "name_kr": "병딸기", "name_en": "Bottled Strawberry", "price": 5000 },
+    { "name_kr": "병블루베리", "name_en": "Bottled Blueberry", "price": 5000 },
+    { "name_kr": "병크랜베리", "name_en": "Bottled Cranberry", "price": 5000 }
+  ]
+}

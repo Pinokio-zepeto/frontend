@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/earlyaccess/nanumgothic.css');
+
+#root {
+}
+
+.App {
+  font-family: 'Nanum Gothic';
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'CafeOhsquareAir';
+  src: url('./assets/fonts/Cafe24OhsquareAir-v2.0.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Alfa Slab One';
+  font-weight: 400;
+  font-style: normal;
+  src: url('./assets/fonts/AlfaSlabOne-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'goorm-sans-code';
+  src: url('./assets/fonts/goorm-sans-regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'goorm-sans-medium';
+  src: url('./assets/fonts/goorm-sans-medium.woff2') format('woff2');
+  font-weight: 100;
+  font-style: 100;
+}
+
+@font-face {
+  font-family: 'LINESeedKR-Bd';
+  src: url('./assets/fonts/LINESeedKR-Bd.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LINESeedKR-Rg';
+  src: url('./assets/fonts/LINESeedKR-Rg.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LINESeedKR-Th';
+  src: url('./assets/fonts/LINESeedKR-Th.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GmarketSans-Th';
+  font-weight: 300;
+  font-style: normal;
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.woff2')
+    format('woff2');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GmarketSans-Rg';
+  font-weight: 500;
+  font-style: normal;
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.woff2')
+    format('woff2');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GmarketSans-Bd';
+  font-weight: 700;
+  font-style: normal;
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansBold.woff2') format('woff2');
+  font-display: swap;
+}
+
+:root {
+  --font-CafeOhsquareAir: 'CafeOhsquareAir';
+  --font-AlfaSlabOne: 'Alfa Slab One';
+}

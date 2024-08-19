@@ -1,0 +1,30 @@
+.Navbar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100vh;
+  background-color: #f8f9fa;
+  transition: left 0.3s ease-in-out;
+}
+
+.Navbar.open {
+  left: 0;
+}
+
+.Navbar button {
+  position: absolute;
+  right: -50px;
+  top: 10px;
+}
+
+.content {
+  margin-left: 0;
+  transition: margin-left 0.3s ease-in-out;
+  padding-top: 20px;
+  padding-left: 60px;
+}
+
+.content.shifted {
+  margin-left: 250px;
+}
