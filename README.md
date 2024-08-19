@@ -58,4 +58,6 @@ Notion : [링크](https://fluffy-smell-11f.notion.site/SSAFY-PJT-5cf6c9977a6c460
 - redux: 5.0.1
 - redux-persist: 6.0.0
 
-# ERD
+# ER
+![Pinkio ERD다이어그램](https://github.com/user-attachments/assets/ac73acdc-8e1d-40ef-91b6-cc74ee9a9e83)
+D
