@@ -1,4 +1,6 @@
-![PinokioLogo](https://github.com/user-attachments/assets/521896e7-2afa-4da6-a5df-dfe230f48df1)
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/521896e7-2afa-4da6-a5df-dfe230f48df1" alt="Image" width="400px">
+</div>
 
 ## 개요
 
@@ -16,7 +18,7 @@ Notion : [링크](https://fluffy-smell-11f.notion.site/SSAFY-PJT-5cf6c9977a6c460
 
 | 이름   | 역할  | 내용                      |
 | ------ | ----- | ------------------------- |
-| 김준우 | FE    | 프론트엔드 개발           |
+| 김준우 | FE / 팀장   | 프론트엔드 개발           |
 | 문재성 | FE    | 프론트엔드 개발, Openvidu |
 | 이상무 | FE    | 프론트엔드 개발           |
 | 전용수 | BE    | 백엔드 개발               |
@@ -64,3 +66,168 @@ Notion : [링크](https://fluffy-smell-11f.notion.site/SSAFY-PJT-5cf6c9977a6c460
 ## ERD
 
 ![Pinkio ERD다이어그램](https://github.com/user-attachments/assets/ac73acdc-8e1d-40ef-91b6-cc74ee9a9e83)
+
+
+## 빌드 및 실행 방법
+
+### FE
+```
+npm install
+npm start
+```
+
+### BE
+```
+
+```
+
+## 주요 개발 내용(FE)
+
+
+### 1. 컴포넌트 구분 및 재활용
+
+#### Common
+```bash
+components/common/
+ ├── Keyboard/
+ │   ├── CustomKeyboard.jsx
+ │   └── koreanLayout.js
+ ├── videocall/
+ │   ├── AudioComponent.jsx
+ │   ├── Video.css
+ │   ├── Video.jsx
+ │   └── VideoComponent.jsx
+ ├── Logo.jsx
+ ├── RoundButton.jsx
+ ├── Toast.jsx
+ ├── Toggle.jsx
+ ├── UpDownButtons.jsx
+ └── WebModal.jsx
+```
+- Role에 관계없이 중복 사용되는 컴포넌트는 components 폴더 내의 common 폴더로 따로 구분하였습니다.
+
+
+#### Kiosk
+```bash
+pages/kiosk/
+ ├── elder/
+ │   └── ElderMenuPage.jsx
+ └── younger/
+     ├── MenuPage.jsx
+     ├── PaymentPage.jsx
+     ├── ReceiptPage.jsx
+     ├── CarouselPage.jsx
+     └── KioskIndex.jsx
+```
+- 다음과 같이 Kisok Page들을 구성하였습니다.
+- MenuPage는 청년층과 노년층의 화면 구성이 달라 따로 구현하였습니다.
+- 나머지 화면들은 비슷한 화면 구성을 지니고 있어 공통된 Page로 구현하였고, isElder 값을 navigate의 state로 넘겨서 구별하였습니다.
+
+
+
+### 2. JWT
+- 로그인 시 다음과 같이 jwt 토큰을 저장합니다.
+```js
+let accessToken;
+let refreshToken;
+if (usertype === 'kiosk') {
+  accessToken = res.authToken?.accessToken;
+  refreshToken = res.authToken?.refreshToken;
+} else if (usertype === 'pos') {
+  accessToken = res.accessToken;
+  refreshToken = res.refreshToken;
+} else {
+  accessToken = res.accessToken;
+  refreshToken = res.refreshToken;
+}
+console.log(`accessToken : ${accessToken}`);
+
+if (accessToken) {
+  console.log('yes');
+  axios.defaults.headers.common['Authorization'] = `Bearer ${accessToken}`;
+
+  // accessToken을 localStorage에 저장
+  localStorage.setItem('accessToken', accessToken);
+
+  // refreshToken을 쿠키에 저장
+  Cookies.set('refreshToken', refreshToken);
+
+  // 사용자 데이터 준비
+  const newUserData = {
+    user: id,
+    type: usertype,
+    typeInfo:
+      usertype === 'kiosk'
+        ? await getKioskInfo()
+        : usertype === 'pos'
+        ? await getPosInfo()
+        : null,
+    token: accessToken,
+  };
+  console.log('userData before dispatch:', newUserData);
+  console.log(`newUserData : ${newUserData.typeInfo}`);
+
+  if (newUserData) {
+    console.log(`userData : ${newUserData.user.id}`);
+    dispatch(setUser(newUserData));
+    console.log('Dispatch successful');
+    navigate(`/${usertype}`);
+  } else {
+    console.error('사용자 데이터가 누락되었습니다.');
+  }
+} else {
+console.error('토큰이 응답에 누락되었습니다.');
+}
+```
+### 3. Redux
+- 다음과 같은 파일 구조로 구성하였습니다.
+```bash
+app/
+ ├── App.js
+ └── store.js
+```
+- Role에 따라 다르게 Slice를 구성하였습니다.
+```bash
+features/
+ ├── advisor/
+ │   └── AdvisorSlice.js
+ ├── kiosk/
+ │   └── CustomerSlice.js
+ ├── pos/
+ │   └── posSlice.js
+ └── user/
+     └── userSlice.js
+```
+#### 3-1. Redux를 통한 User 정보 관리
+- User의 Role이 세 종류이므로 Slice도 세 종류로 나누었습니다.
+
+##### 3-1-1. Advisor
+
+##### 3-1-2. Customer(Kiosk)
+
+##### 3-1-3. Pos
+
+
+
+
+#### 3-2. Redux-persist를 통한 새로고침 방지
+
+### 4. OpenVidu
+
+
+### 5. ProtectedRouter
+
+```js
+// 특정 Role로 로그인 되어있으면 다른 Role에 해당되는 페이지로 넘어가지 못하게 한다.
+const ProtectedRoute = ({ type }) => {
+  const user = useSelector((state) => state.user);
+  if (!user || user.type !== type) {
+    return <Navigate to="/" />;
+  }
+  return <Outlet />;
+};
+```
+
+- 다음과 같이 User의 Role(Kiosk, Pos, Advisor)이 다르면 다른 Role에 해당되는 페이지로 넘어가지 못합니다.
+
+- 만약 URL 입력을 통해 넘어가려고 한다면 각 Role의 root page로 넘어가게 됩니다.
