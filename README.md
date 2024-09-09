@@ -211,6 +211,12 @@ features/
 
 
 #### 3-2. Redux-persist를 통한 새로고침 방지
+리덕스의 store는 페이지를 새로고침 할 경우 state가 날아가는 것을 볼 수 있다.
+이것에 대한 대응 방안으로 localStorage 또는 session에 저장하고자 하는 reducer state를 저장하여, 새로고침 하여도 저장공간에 있는 데이터를 redux에 불러오는 형식으로 이루어집니다.
+위에서 말한 이 작동을 위해 redux-persist를 사용합니다.
+```
+
+```
 
 ### 4. OpenVidu
 
