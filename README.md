@@ -215,9 +215,50 @@ features/
 이것에 대한 대응 방안으로 localStorage 또는 session에 저장하고자 하는 reducer state를 저장하여, 새로고침 하여도 저장공간에 있는 데이터를 redux에 불러오는 형식으로 이루어집니다.
 위에서 말한 이 작동을 위해 redux-persist를 사용합니다.
 ```
+// config 작성 후, rootReducer 감싸기
+import { combineReducers } from 'redux';
+import authReducer from './authReducer';
+import { persistReducer } from 'redux-persist';
+import storage from 'redux-persist/lib/storage';
 
+// config 작성
+const persistConfig = {
+  key: "root", // localStorage key 
+  storage, // localStorage
+  whitelist: ["auth"], // target (reducer name)
+}
+
+const rootReducer = combineReducers({
+  auth: authReducer
+});
+
+// persistReducer로 감싸기
+export default persistReducer(persistConfig, rootReducer);
 ```
+```
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App';
+import { Provider } from "react-redux";
+import { PersistGate } from 'redux-persist/integration/react';
+import { store, persistor } from './state/Store';
 
+const root = ReactDOM.createRoot(
+  document.getElementById('root') as HTMLElement
+);
+root.render(
+  <Provider store={store}>
+    <PersistGate persistor={persistor}>
+      <App />
+    </PersistGate>
+  </Provider>
+);
+```
+- App을 불러오면서 Local Storage에 저장된 유저 정보를 사용한다.
+- 서버에 있는 로그인 상태와 비교하며 재확인한다.
+- 서버의 응답이 오면 해당 로그인 정보로 업데이트 한다.
+- 토큰이 만료되었다면 재로그인을 요청한다.
 ### 4. OpenVidu
 
 
